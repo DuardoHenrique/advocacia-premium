@@ -1,0 +1,61 @@
+@import "tailwindcss";
+@config "../../tailwind.config.js";
+
+:root {
+  /* Backgrounds */
+  --color-bg-primary:       #07070A;
+  --color-bg-surface:       #0D0D12;
+  --color-bg-elevated:      #111118;
+  --color-bg-glass:         rgba(15, 15, 18, 0.85);
+  --color-bg-glass-strong:  rgba(12, 12, 15, 0.95);
+
+  /* Texto */
+  --color-text-primary:     #F3F1EC;
+  --color-text-secondary:   rgba(243, 241, 236, 0.72);
+  --color-text-muted:       rgba(243, 241, 236, 0.52);
+
+  /* Acento dourado */
+  --color-accent:           #C5A059;
+  --color-accent-dark:      #8F7440;
+
+  /* Bordas */
+  --color-border-soft:      rgba(255, 255, 255, 0.08);
+  --color-border-strong:    rgba(255, 255, 255, 0.14);
+
+  /* Sombras */
+  --color-shadow-deep:      rgba(0, 0, 0, 0.45);
+}
+
+@layer base {
+  body {
+    background-color: var(--color-bg-primary);
+    color: var(--color-text-primary);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+}
+
+@layer utilities {
+  .glass {
+    background: rgba(15, 15, 18, 0.85);
+    backdrop-filter: blur(14px);
+    -webkit-backdrop-filter: blur(14px);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 32px;
+  }
+
+  .glass-strong {
+    background: rgba(12, 12, 15, 0.95);
+    backdrop-filter: blur(18px);
+    -webkit-backdrop-filter: blur(18px);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 32px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
+}

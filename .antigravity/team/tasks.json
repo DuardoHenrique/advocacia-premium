@@ -1,0 +1,68 @@
+{
+  "tasks": [
+    {
+      "id": 1,
+      "title": "Inicializar CLI e infra Vite/React",
+      "status": "PENDING",
+      "plan_approved": false,
+      "assigned_to": "Especialista_Frontend",
+      "dependencies": []
+    },
+    {
+      "id": 2,
+      "title": "Configurar tokens, tailwind e globals.css",
+      "status": "PENDING",
+      "plan_approved": false,
+      "assigned_to": "Arquitecto",
+      "dependencies": [
+        1
+      ]
+    },
+    {
+      "id": 3,
+      "title": "Core Components (Navbar, Bot\u00f5es, Cards)",
+      "status": "PENDING",
+      "plan_approved": false,
+      "assigned_to": "Especialista_Frontend",
+      "dependencies": [
+        2
+      ]
+    },
+    {
+      "id": 4,
+      "title": "Implementar Se\u00e7\u00f5es (Hero at\u00e9 Contato)",
+      "status": "PENDING",
+      "plan_approved": false,
+      "assigned_to": "Especialista_Frontend",
+      "dependencies": [
+        3
+      ]
+    },
+    {
+      "id": 5,
+      "title": "Ajustes GSAP, Lenis e Parallax",
+      "status": "PENDING",
+      "plan_approved": false,
+      "assigned_to": "Especialista_Frontend",
+      "dependencies": [
+        4
+      ]
+    },
+    {
+      "id": 6,
+      "title": "Revis\u00e3o Global de Qualidade e Acessibilidade",
+      "status": "PENDING",
+      "plan_approved": false,
+      "assigned_to": "Revisor",
+      "dependencies": [
+        5
+      ]
+    }
+  ],
+  "members": [
+    "Director",
+    "Arquitecto",
+    "Especialista_Frontend",
+    "Revisor"
+  ]
+}
