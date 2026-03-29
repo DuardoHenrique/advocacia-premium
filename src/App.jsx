@@ -11,10 +11,10 @@ import WhatsAppFAB from './components/ui/WhatsAppFAB'
 // Sections (Core)
 import Hero from './components/sections/Hero'
 import AreasAtuacao from './components/sections/AreasAtuacao'
-import SobreEscritorio from './components/sections/SobreEscritorio'
-import Equipe from './components/sections/Equipe'
 
 // Sections (Lazy Loaded)
+const SobreEscritorio = React.lazy(() => import('./components/sections/SobreEscritorio'))
+const Equipe = React.lazy(() => import('./components/sections/Equipe'))
 const CasosResultados = React.lazy(() => import('./components/sections/CasosResultados'))
 const ProcessoTimeline = React.lazy(() => import('./components/sections/ProcessoTimeline'))
 const Depoimentos = React.lazy(() => import('./components/sections/Depoimentos'))
@@ -34,9 +34,9 @@ function App() {
         <main>
           <Hero />
           <AreasAtuacao />
-          <SobreEscritorio />
-          <Equipe />
           <React.Suspense fallback={<div className="h-64 bg-bg-primary" />}>
+            <SobreEscritorio />
+            <Equipe />
             <CasosResultados />
             <ProcessoTimeline />
             <Depoimentos />

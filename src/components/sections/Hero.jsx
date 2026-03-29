@@ -44,7 +44,7 @@ export default function Hero() {
     <section 
       id="hero" 
       ref={sectionRef} 
-      className="relative w-full h-[100dvh] flex flex-col md:flex-row items-start md:items-center overflow-hidden pt-[100px] md:pt-0"
+      className="relative w-full h-[100dvh] flex flex-col md:flex-row items-start md:items-center overflow-hidden pt-[80px] md:pt-0"
     >
       {/* Background Cinematográfico */}
       <div 
@@ -65,7 +65,7 @@ export default function Hero() {
           loop
           playsInline
           onLoadedData={() => setVideoLoaded(true)}
-          className={`hidden md:block absolute inset-0 w-full h-full object-cover transition-opacity duration-1000 ${videoLoaded ? 'opacity-100' : 'opacity-0'}`}
+          className={`hidden md:block absolute inset-0 w-full h-full object-cover object-bottom transition-opacity duration-1000 ${videoLoaded ? 'opacity-100' : 'opacity-0'}`}
         >
           <source src={heroVideo} type="video/mp4" />
         </video>
@@ -78,7 +78,7 @@ export default function Hero() {
           playsInline
           poster={heroPoster}
           onLoadedData={() => setMobileVideoLoaded(true)}
-          className={`block md:hidden absolute inset-0 w-full h-full object-cover transition-opacity duration-1000 ${mobileVideoLoaded ? 'opacity-100' : 'opacity-0'}`}
+          className={`block md:hidden absolute inset-0 w-full h-full object-cover object-bottom transition-opacity duration-1000 ${mobileVideoLoaded ? 'opacity-100' : 'opacity-0'}`}
         >
           <source src={heroVideoMobile} type="video/mp4" />
         </video>
@@ -99,7 +99,7 @@ export default function Hero() {
           </div>
           <h1 
             ref={headlineRef} 
-            className="font-display font-bold italic text-[34px] leading-[1.15] md:text-[64px] lg:text-[72px] text-text-primary mb-6 opacity-0"
+            className="font-display font-bold italic text-[30px] leading-[1.1] md:text-[64px] lg:text-[72px] text-text-primary mb-6 opacity-0"
           >
             Defesa jurídica com <span className="text-accent">rigor e excelência.</span>
           </h1>
