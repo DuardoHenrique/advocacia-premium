@@ -1,0 +1,23 @@
+./src/components/layout/Footer.jsx:10:          <h2 className="font-display text-2xl italic font-bold mb-4">Advocacia Premium</h2>
+./src/components/layout/Footer.jsx:18:          <h3 className="font-mono text-accent text-xs uppercase tracking-widest mb-6">Navegação</h3>
+./src/components/layout/Footer.jsx:32:          <h3 className="font-mono text-accent text-xs uppercase tracking-widest mb-6">Legal</h3>
+./src/components/layout/Footer.jsx:46:          <h3 className="font-mono text-accent text-xs uppercase tracking-widest mb-6">Sistemas</h3>
+./src/components/sections/SobreEscritorio.jsx:58:          <h2 className="font-heading font-bold text-[32px] md:text-[48px] text-text-primary mb-6">
+./src/components/sections/Hero.jsx:100:          <h1 
+./src/components/sections/Equipe.jsx:37:          <h2 className="font-heading font-bold text-[32px] md:text-[48px] text-text-primary mb-6">
+./src/components/sections/Equipe.jsx:64:                <h3 className="font-heading font-bold text-xl text-text-primary mb-1">
+./src/components/sections/ProcessoTimeline.jsx:98:          <h2 className="font-heading font-bold text-[32px] md:text-[48px] text-text-primary mb-6">
+./src/components/sections/ProcessoTimeline.jsx:124:              <h3 className="font-heading font-bold text-2xl text-text-primary mb-4 w-min whitespace-nowrap">
+./src/components/sections/ProcessoTimeline.jsx:145:              <h3 className="font-heading font-bold text-xl text-text-primary mb-3">
+./src/components/sections/CasosResultados.jsx:50:          <h2 className="font-heading font-bold text-[32px] md:text-[48px] text-text-primary mb-6 leading-tight">
+./src/components/sections/CasosResultados.jsx:69:              <h3 className="font-heading font-bold text-xl md:text-2xl text-text-primary mb-4 leading-snug">
+./src/components/sections/FAQ.jsx:38:        <h2 className="font-heading font-bold text-[32px] md:text-[48px] text-text-primary mb-6">
+./src/components/sections/FAQ.jsx:58:                <h3 className="font-heading font-bold text-lg md:text-xl text-text-primary pr-8">
+./src/components/sections/MapaContato.jsx:98:            <h3 className="font-display font-bold text-[32px] md:text-[40px] text-text-primary mb-8 italic leading-tight">
+./src/components/sections/MapaContato.jsx:109:                  <h4 className="font-heading font-semibold text-text-primary text-sm mb-1 uppercase tracking-wide">Endereço</h4>
+./src/components/sections/MapaContato.jsx:123:                  <h4 className="font-heading font-semibold text-text-primary text-sm mb-1 uppercase tracking-wide">Telefone</h4>
+./src/components/sections/MapaContato.jsx:133:                  <h4 className="font-heading font-semibold text-text-primary text-sm mb-1 uppercase tracking-wide">E-mail</h4>
+./src/components/sections/Depoimentos.jsx:45:          <h2 className="font-heading font-bold text-[32px] md:text-[48px] text-text-primary mb-6 leading-tight">
+./src/components/sections/AreasAtuacao.jsx:62:          <h2 className="font-heading font-bold text-[28px] md:text-[40px] lg:text-[48px] text-text-primary mb-6">
+./src/components/sections/AreasAtuacao.jsx:96:                  <h3 className="font-heading font-bold text-xl md:text-2xl text-text-primary mb-3">
+./src/components/sections/CTAFinal.jsx:29:            <h2 className="font-display font-bold italic text-[40px] md:text-[56px] text-text-primary leading-[1.1] mb-6">

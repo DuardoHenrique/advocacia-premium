@@ -54,7 +54,7 @@ export default function Hero() {
         {/* Poster Inicial */}
         <img 
           src={heroPoster} 
-          alt="Poster Advocacia"
+          alt="Advocacia Premium - Escritório de advocacia de alto padrão com balança da justiça no fundo"
           className={`absolute inset-0 w-full h-full object-cover transition-opacity duration-1000 ${(videoLoaded || mobileVideoLoaded) ? 'opacity-0' : 'opacity-100'}`}
         />
         

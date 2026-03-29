@@ -34,7 +34,7 @@ export default function CasosResultados() {
       <div className="absolute inset-0 z-0 select-none pointer-events-none">
         <img 
           src={backgroundCasos} 
-          alt="Casos Reais Background"
+          alt="Escritório de advocacia - Registro de casos de sucesso e resultados concretos em Direito Civil e Trabalhista"
           className="w-full h-full object-cover opacity-80 mix-blend-luminosity scale-110"
         />
         <div className="absolute inset-0 bg-gradient-to-b from-bg-primary via-bg-primary/0 to-bg-primary" />

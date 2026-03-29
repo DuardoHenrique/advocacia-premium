@@ -1,0 +1,6 @@
+./src/components/sections/SobreEscritorio.jsx:113:            <img 
+./src/components/sections/Hero.jsx:55:        <img 
+./src/components/sections/Equipe.jsx:53:              <img 
+./src/components/sections/CasosResultados.jsx:35:        <img 
+./src/components/sections/Depoimentos.jsx:29:        <img 
+./src/components/sections/AreasAtuacao.jsx:78:              <img 

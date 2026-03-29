@@ -28,7 +28,7 @@ export default function Depoimentos() {
       <div className="absolute inset-0 z-0 select-none pointer-events-none">
         <img 
           src={backgroundComentarios} 
-          alt="Depoimentos Background"
+          alt="Advocacia Premium - Depoimentos de clientes satisfeitos com a atuação jurídica em diversas áreas"
           className="w-full h-full object-cover opacity-80 mix-blend-luminosity scale-110"
         />
         <div className="absolute inset-0 bg-gradient-to-b from-bg-primary via-bg-primary/0 to-bg-primary" />

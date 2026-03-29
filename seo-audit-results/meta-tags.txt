@@ -1,0 +1,10 @@
+./performance-audit-results/bundle-stats.html:5:  <meta charset="UTF-8" />
+./performance-audit-results/bundle-stats.html:6:  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+./performance-audit-results/bundle-stats.html:7:  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+./index.html:4:    <meta charset="UTF-8" />
+./index.html:6:    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+./index.html:16:    <meta name="description" content="Defesa jurídica com rigor e excelência. Atuação precisa em Direito Civil, Trabalhista, Empresarial e de Família." />
+./index.html:17:    <meta name="theme-color" content="#07070A" />
+./index.html:20:    <meta property="og:title" content="Advocacia Premium" />
+./index.html:21:    <meta property="og:description" content="Defesa jurídica com rigor e excelência." />
+./index.html:22:    <meta property="og:type" content="website" />

@@ -52,7 +52,7 @@ export default function Equipe() {
               {/* Foto Real */}
               <img 
                 src={membro.img} 
-                alt={membro.nome}
+                alt={`${membro.nome} - ${membro.cargo} na Advocacia Premium`}
                 className="absolute inset-0 w-full h-full object-cover filter brightness-[0.9] contrast-[1.05] transition-transform duration-700 ease-[cubic-bezier(0.25,0.46,0.45,0.94)] group-hover:scale-110" 
               />
               

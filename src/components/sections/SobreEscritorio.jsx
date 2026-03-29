@@ -112,7 +112,7 @@ export default function SobreEscritorio() {
           >
             <img 
               src={sobreImg} 
-              alt="Detalhe de biblioteca jurídica Premium"
+              alt="Escritório de Advocacia Premium - Detalhe de biblioteca jurídica clássica que representa solidez e tradição"
               className="w-full h-full object-cover filter brightness-[0.7] sepia-[0.2] hue-rotate-[10deg]"
             />
             <div className="absolute inset-0 bg-gradient-to-t from-bg-primary via-bg-primary/40 to-transparent opacity-80" />
