@@ -34,7 +34,7 @@ export default function Hero() {
     <section 
       id="hero" 
       ref={sectionRef} 
-      className="relative w-full h-[100dvh] flex flex-col md:flex-row items-start md:items-center overflow-hidden pt-[80px] md:pt-0"
+      className="relative w-full h-screen flex flex-col md:flex-row items-start md:items-center overflow-hidden pt-[80px] md:pt-0"
     >
       {/* Background Cinematográfico */}
       <div 
