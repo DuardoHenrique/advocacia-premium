@@ -3,7 +3,8 @@ import { gsap } from '../../lib/gsap'
 import Button from '../ui/Button'
 import heroVideo from '../../assets/hero-advocacia-optimized.mp4'
 import heroVideoMobile from '../../assets/hero-mobile-optimized.mp4'
-import heroPoster from '../../assets/hero-poster.webp'
+import heroPosterDesktop from '../../assets/hero-poster-desktop.webp'
+import heroPosterMobile from '../../assets/hero-poster-mobile.webp'
 
 export default function Hero() {
   const sectionRef = useRef(null)
@@ -51,11 +52,18 @@ export default function Hero() {
         ref={bgRef}
         className="absolute inset-0 z-0 bg-bg-primary"
       >
-        {/* Poster Inicial */}
+        {/* Poster Inicial Desktop */}
         <img 
-          src={heroPoster} 
-          alt="Advocacia Premium - Escritório de advocacia de alto padrão com balança da justiça no fundo"
-          className={`absolute inset-0 w-full h-full object-cover transition-opacity duration-1000 ${(videoLoaded || mobileVideoLoaded) ? 'opacity-0' : 'opacity-100'}`}
+          src={heroPosterDesktop} 
+          alt="Advocacia Premium - Escritório de advocacia de alto padrão"
+          className={`hidden md:block absolute inset-0 w-full h-full object-cover object-center transition-opacity duration-1000 ${videoLoaded ? 'opacity-0' : 'opacity-100'}`}
+        />
+
+        {/* Poster Inicial Mobile */}
+        <img 
+          src={heroPosterMobile} 
+          alt="Advocacia Premium - Escritório de advocacia de alto padrão"
+          className={`block md:hidden absolute inset-0 w-full h-full object-cover object-bottom transition-opacity duration-1000 ${mobileVideoLoaded ? 'opacity-0' : 'opacity-100'}`}
         />
         
         {/* Vídeo Desktop */}
@@ -65,7 +73,7 @@ export default function Hero() {
           loop
           playsInline
           onLoadedData={() => setVideoLoaded(true)}
-          className={`hidden md:block absolute inset-0 w-full h-full object-cover object-bottom transition-opacity duration-1000 ${videoLoaded ? 'opacity-100' : 'opacity-0'}`}
+          className={`hidden md:block absolute inset-0 w-full h-full object-cover object-center transition-opacity duration-1000 ${videoLoaded ? 'opacity-100' : 'opacity-0'}`}
         >
           <source src={heroVideo} type="video/mp4" />
         </video>
@@ -76,7 +84,7 @@ export default function Hero() {
           muted
           loop
           playsInline
-          poster={heroPoster}
+          poster={heroPosterMobile}
           onLoadedData={() => setMobileVideoLoaded(true)}
           className={`block md:hidden absolute inset-0 w-full h-full object-cover object-bottom transition-opacity duration-1000 ${mobileVideoLoaded ? 'opacity-100' : 'opacity-0'}`}
         >
