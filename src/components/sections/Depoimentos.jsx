@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import SectionWrapper from '../ui/SectionWrapper'
-import backgroundComentarios from '../../assets/background-comentarios.png'
+import backgroundComentarios from '../../assets/background-comentarios.webp'
 
 const depoimentos = [
   { text: "O atendimento foi extremamente profissional e transparente em todas as etapas.", author: "Carlos Andrade", ctx: "Direito Trabalhista" },

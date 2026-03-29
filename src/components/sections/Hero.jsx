@@ -1,9 +1,9 @@
 import React, { useEffect, useRef, useState } from 'react'
 import { gsap } from '../../lib/gsap'
 import Button from '../ui/Button'
-import heroVideo from '../../assets/hero advocacia.mp4'
-import heroVideoMobile from '../../assets/background-hero-mobile.mp4'
-import heroPoster from '../../assets/hero-poster.jpg'
+import heroVideo from '../../assets/hero-advocacia-optimized.mp4'
+import heroVideoMobile from '../../assets/hero-mobile-optimized.mp4'
+import heroPoster from '../../assets/hero-poster.webp'
 
 export default function Hero() {
   const sectionRef = useRef(null)

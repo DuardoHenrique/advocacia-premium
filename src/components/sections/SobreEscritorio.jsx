@@ -1,7 +1,7 @@
 import React, { useEffect, useRef } from 'react'
 import { gsap } from '../../lib/gsap'
 import SectionWrapper from '../ui/SectionWrapper'
-import sobreImg from '../../assets/sobre-escritorio.png'
+import sobreImg from '../../assets/sobre-escritorio.webp'
 
 export default function SobreEscritorio() {
   const sectionRef = useRef(null)

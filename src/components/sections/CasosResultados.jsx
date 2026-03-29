@@ -1,7 +1,7 @@
 import React from 'react'
 import SectionWrapper from '../ui/SectionWrapper'
 import Card from '../ui/Card'
-import backgroundCasos from '../../assets/background-casos-reais.png'
+import backgroundCasos from '../../assets/background-casos-reais.webp'
 
 const casos = [
   {

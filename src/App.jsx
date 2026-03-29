@@ -8,16 +8,19 @@ import NoiseOverlay from './components/ui/NoiseOverlay'
 import WhatsAppFAB from './components/ui/WhatsAppFAB'
 
 // Sections
+// Sections (Core)
 import Hero from './components/sections/Hero'
 import AreasAtuacao from './components/sections/AreasAtuacao'
 import SobreEscritorio from './components/sections/SobreEscritorio'
 import Equipe from './components/sections/Equipe'
-import CasosResultados from './components/sections/CasosResultados'
-import ProcessoTimeline from './components/sections/ProcessoTimeline'
-import Depoimentos from './components/sections/Depoimentos'
-import CTAFinal from './components/sections/CTAFinal'
-import FAQ from './components/sections/FAQ'
-import MapaContato from './components/sections/MapaContato'
+
+// Sections (Lazy Loaded)
+const CasosResultados = React.lazy(() => import('./components/sections/CasosResultados'))
+const ProcessoTimeline = React.lazy(() => import('./components/sections/ProcessoTimeline'))
+const Depoimentos = React.lazy(() => import('./components/sections/Depoimentos'))
+const CTAFinal = React.lazy(() => import('./components/sections/CTAFinal'))
+const FAQ = React.lazy(() => import('./components/sections/FAQ'))
+const MapaContato = React.lazy(() => import('./components/sections/MapaContato'))
 
 function App() {
   useLenis()
@@ -33,12 +36,14 @@ function App() {
           <AreasAtuacao />
           <SobreEscritorio />
           <Equipe />
-          <CasosResultados />
-          <ProcessoTimeline />
-          <Depoimentos />
-          <CTAFinal />
-          <FAQ />
-          <MapaContato />
+          <React.Suspense fallback={<div className="h-64 bg-bg-primary" />}>
+            <CasosResultados />
+            <ProcessoTimeline />
+            <Depoimentos />
+            <CTAFinal />
+            <FAQ />
+            <MapaContato />
+          </React.Suspense>
         </main>
 
         <Footer />
