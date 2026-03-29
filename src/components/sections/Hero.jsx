@@ -2,6 +2,7 @@ import React, { useEffect, useRef, useState } from 'react'
 import { gsap } from '../../lib/gsap'
 import Button from '../ui/Button'
 import heroVideo from '../../assets/hero advocacia.mp4'
+import heroVideoMobile from '../../assets/background-hero-mobile.mp4'
 import heroPoster from '../../assets/hero-poster.jpg'
 
 export default function Hero() {
@@ -11,6 +12,7 @@ export default function Hero() {
   const ctaRef = useRef(null)
   const bgRef = useRef(null)
   const [videoLoaded, setVideoLoaded] = useState(false)
+  const [mobileVideoLoaded, setMobileVideoLoaded] = useState(false)
 
   useEffect(() => {
     let ctx = gsap.context(() => {
@@ -42,7 +44,7 @@ export default function Hero() {
     <section 
       id="hero" 
       ref={sectionRef} 
-      className="relative w-full h-[100dvh] flex items-center overflow-hidden"
+      className="relative w-full h-[100dvh] flex flex-col md:flex-row items-start md:items-center overflow-hidden pt-[100px] md:pt-0"
     >
       {/* Background Cinematográfico */}
       <div 
@@ -53,26 +55,40 @@ export default function Hero() {
         <img 
           src={heroPoster} 
           alt="Poster Advocacia"
-          className={`absolute inset-0 w-full h-full object-cover transition-opacity duration-1000 ${videoLoaded ? 'opacity-0' : 'opacity-80'}`}
+          className={`absolute inset-0 w-full h-full object-cover transition-opacity duration-1000 ${(videoLoaded || mobileVideoLoaded) ? 'opacity-0' : 'opacity-100'}`}
         />
         
-        {/* Vídeo */}
+        {/* Vídeo Desktop */}
         <video
           autoPlay
           muted
           loop
           playsInline
           onLoadedData={() => setVideoLoaded(true)}
-          className={`absolute inset-0 w-full h-full object-cover transition-opacity duration-1000 ${videoLoaded ? 'opacity-40' : 'opacity-0'}`}
+          className={`hidden md:block absolute inset-0 w-full h-full object-cover transition-opacity duration-1000 ${videoLoaded ? 'opacity-100' : 'opacity-0'}`}
         >
           <source src={heroVideo} type="video/mp4" />
         </video>
 
-        <div className="absolute inset-0 bg-gradient-to-r from-bg-primary/80 via-bg-primary/40 to-transparent" />
+        {/* Vídeo Mobile */}
+        <video
+          autoPlay
+          muted
+          loop
+          playsInline
+          poster={heroPoster}
+          onLoadedData={() => setMobileVideoLoaded(true)}
+          className={`block md:hidden absolute inset-0 w-full h-full object-cover transition-opacity duration-1000 ${mobileVideoLoaded ? 'opacity-100' : 'opacity-0'}`}
+        >
+          <source src={heroVideoMobile} type="video/mp4" />
+        </video>
+
+        <div className="absolute inset-0 bg-gradient-to-r from-bg-primary/40 via-transparent to-transparent" />
       </div>
 
       {/* Overlays de legibilidade */}
-      <div className="absolute inset-0 z-10 bg-gradient-to-t from-bg-primary/60 via-transparent to-transparent h-full" />
+      {/* Overlay sutil para legibilidade removido/suavizado */}
+      <div className="absolute inset-0 z-10 bg-transparent h-full" />
 
       {/* Conteúdo */}
       <div className="relative z-20 w-full max-w-container mx-auto px-[20px] md:px-[32px]">
@@ -83,7 +99,7 @@ export default function Hero() {
           </div>
           <h1 
             ref={headlineRef} 
-            className="font-display font-bold italic text-[40px] leading-[1.1] md:text-[64px] lg:text-[72px] text-text-primary mb-6 opacity-0"
+            className="font-display font-bold italic text-[34px] leading-[1.15] md:text-[64px] lg:text-[72px] text-text-primary mb-6 opacity-0"
           >
             Defesa jurídica com <span className="text-accent">rigor e excelência.</span>
           </h1>
