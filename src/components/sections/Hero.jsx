@@ -25,17 +25,6 @@ export default function Hero() {
         .fromTo(ctaRef.current, { opacity: 0, y: 16 }, { opacity: 1, y: 0, duration: 0.7 }, '-=0.5')
         .fromTo(bgRef.current, { opacity: 0 }, { opacity: 1, duration: 1.5, ease: 'linear' }, 0)
 
-      // Parallax
-      gsap.to(bgRef.current, {
-        yPercent: 15,
-        ease: 'none',
-        scrollTrigger: {
-          trigger: sectionRef.current,
-          start: 'top top',
-          end: 'bottom top',
-          scrub: true,
-        }
-      })
     }, sectionRef)
 
     return () => ctx.revert()
@@ -58,13 +47,6 @@ export default function Hero() {
           alt="Advocacia Premium - Escritório de advocacia de alto padrão"
           className={`hidden md:block absolute inset-0 w-full h-full object-cover object-center transition-opacity duration-1000 ${videoLoaded ? 'opacity-0' : 'opacity-100'}`}
         />
-
-        {/* Poster Inicial Mobile */}
-        <img 
-          src={heroPosterMobile} 
-          alt="Advocacia Premium - Escritório de advocacia de alto padrão"
-          className={`block md:hidden absolute inset-0 w-full h-full object-cover object-bottom transition-opacity duration-1000 ${mobileVideoLoaded ? 'opacity-0' : 'opacity-100'}`}
-        />
         
         {/* Vídeo Desktop */}
         <video
@@ -78,7 +60,7 @@ export default function Hero() {
           <source src={heroVideo} type="video/mp4" />
         </video>
 
-        {/* Vídeo Mobile */}
+        {/* Vídeo Mobile - Simplified to be more robust */}
         <video
           autoPlay
           muted
@@ -86,7 +68,7 @@ export default function Hero() {
           playsInline
           poster={heroPosterMobile}
           onLoadedData={() => setMobileVideoLoaded(true)}
-          className={`block md:hidden absolute inset-0 w-full h-full object-cover object-bottom transition-opacity duration-1000 ${mobileVideoLoaded ? 'opacity-100' : 'opacity-0'}`}
+          className="block md:hidden absolute inset-0 w-full h-full object-cover object-bottom"
         >
           <source src={heroVideoMobile} type="video/mp4" />
         </video>
