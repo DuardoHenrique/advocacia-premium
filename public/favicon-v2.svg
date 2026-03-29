@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+  <defs>
+    <linearGradient id="goldGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#BF953F;stop-opacity:1" />
+      <stop offset="25%" style="stop-color:#FCF6BA;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#B38728;stop-opacity:1" />
+      <stop offset="75%" style="stop-color:#FBF5B7;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#AA771C;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  <!-- Base inferior -->
+  <path d="M10 28h12v2H10z" fill="url(#goldGradient)" />
+  <path d="M12 26h8v2h-8z" fill="url(#goldGradient)" />
+  <!-- Haste Central -->
+  <rect x="15.2" y="6" width="1.6" height="20" rx="0.5" fill="url(#goldGradient)" />
+  <circle cx="16" cy="6" r="1.2" fill="url(#goldGradient)" />
+  <!-- Travessa Superior -->
+  <path d="M4 8.5c0-.5.5-1 1-1h22c.5 0 1 .5 1 1s-.5 1-1 1H5c-.5 0-1-.5-1-1z" fill="url(#goldGradient)" />
+  <!-- Prato Esquerdo -->
+  <path d="M5 9.5l-3 8h6l-3-8z" fill="none" stroke="url(#goldGradient)" stroke-width="0.5" />
+  <path d="M2 17.5a3 1.2 0 0 0 6 0H2z" fill="url(#goldGradient)" />
+  <!-- Prato Direito -->
+  <path d="M27 9.5l-3 8h6l-3-8z" fill="none" stroke="url(#goldGradient)" stroke-width="0.5" />
+  <path d="M24 17.5a3 1.2 0 0 0 6 0h-6z" fill="url(#goldGradient)" />
+</svg>

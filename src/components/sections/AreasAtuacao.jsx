@@ -7,28 +7,28 @@ const areas = [
     id: 1,
     title: 'Direito Civil',
     desc: 'Soluções jurídicas em conflitos, responsabilidades e relações civis com orientação segura.',
-    bg: 'linear-gradient(to bottom, transparent, rgba(7,7,10,0.92))',
+    bg: 'linear-gradient(to bottom, transparent, rgba(7,7,10,0.7))',
     img: 'https://images.unsplash.com/photo-1589829085413-56de8ae18c73?auto=format&fit=crop&q=80&w=800'
   },
   {
     id: 2,
     title: 'Direito Trabalhista',
     desc: 'Atuação estratégica em demandas trabalhistas, defesa de direitos e análise de riscos.',
-    bg: 'linear-gradient(to bottom, transparent, rgba(7,7,10,0.92))',
+    bg: 'linear-gradient(to bottom, transparent, rgba(7,7,10,0.7))',
     img: 'https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&q=80&w=800'
   },
   {
     id: 3,
     title: 'Direito Empresarial',
     desc: 'Consultoria e suporte para empresas com foco em contratos, estrutura e prevenção de litígios.',
-    bg: 'linear-gradient(to bottom, transparent, rgba(7,7,10,0.92))',
+    bg: 'linear-gradient(to bottom, transparent, rgba(7,7,10,0.7))',
     img: 'https://images.unsplash.com/photo-1600880292203-757bb62b4baf?auto=format&fit=crop&q=80&w=800'
   },
   {
     id: 4,
     title: 'Direito de Família',
     desc: 'Condução sensível e técnica em demandas familiares com foco em proteção e equilíbrio.',
-    bg: 'linear-gradient(to bottom, transparent, rgba(7,7,10,0.92))',
+    bg: 'linear-gradient(to bottom, transparent, rgba(7,7,10,0.7))',
     img: 'https://images.unsplash.com/photo-1511895426328-dc8714191300?auto=format&fit=crop&q=80&w=800'
   }
 ]
@@ -78,7 +78,7 @@ export default function AreasAtuacao() {
               <img 
                 src={area.img}
                 alt={area.title}
-                className="absolute inset-0 w-full h-full object-cover filter brightness-[0.5] contrast-[1.1] grayscale-[0.3] transition-transform duration-700 ease-[cubic-bezier(0.25,0.46,0.45,0.94)] group-hover:scale-110 group-hover:brightness-[0.7] group-hover:saturate-150"
+                className="absolute inset-0 w-full h-full object-cover filter brightness-[0.8] contrast-[1.05] transition-transform duration-700 ease-[cubic-bezier(0.25,0.46,0.45,0.94)] group-hover:scale-110 group-hover:brightness-[0.95] group-hover:saturate-120"
               />
               
               {/* Overlay Escuro */}

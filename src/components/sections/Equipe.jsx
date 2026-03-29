@@ -53,11 +53,11 @@ export default function Equipe() {
               <img 
                 src={membro.img} 
                 alt={membro.nome}
-                className="absolute inset-0 w-full h-full object-cover filter brightness-[0.7] contrast-[1.1] grayscale-[0.2] transition-transform duration-700 ease-[cubic-bezier(0.25,0.46,0.45,0.94)] group-hover:scale-110" 
+                className="absolute inset-0 w-full h-full object-cover filter brightness-[0.9] contrast-[1.05] transition-transform duration-700 ease-[cubic-bezier(0.25,0.46,0.45,0.94)] group-hover:scale-110" 
               />
               
-              {/* Overlay Escuro Inferior */}
-              <div className="absolute inset-x-0 bottom-0 h-3/4 bg-gradient-to-t from-[#07070A] via-[#07070A]/80 to-transparent z-10 opacity-90 transition-opacity duration-400 group-hover:opacity-70" />
+              {/* Overlay Escuro Inferior Suavizado */}
+              <div className="absolute inset-x-0 bottom-0 h-1/2 bg-gradient-to-t from-[#07070A]/90 via-[#07070A]/40 to-transparent z-10 opacity-70 transition-opacity duration-400 group-hover:opacity-50" />
 
               {/* Informações */}
               <div className="absolute bottom-0 left-0 w-full p-6 z-20">
